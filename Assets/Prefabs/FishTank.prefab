@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1560216458983610773}
   - component: {fileID: 3296704046540019165}
   m_Layer: 0
-  m_Name: FishTank A
+  m_Name: FishTank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

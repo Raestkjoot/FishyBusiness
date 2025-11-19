@@ -2,9 +2,25 @@ using UnityEngine;
 
 public class FishTank : MonoBehaviour
 {
+    [SerializeField] private FishType _fishType;
+
     private void OnMouseEnter()
     {
-        //If your mouse hovers over the GameObject with the script attached, output this message
-        Debug.Log("Mouse is over GameObject.");
+        Debug.Log("Mouse is over " + GetFishName(_fishType) + " fish.");
+    }
+
+    private string GetFishName(FishType type)
+    {
+        switch (type)
+        {
+            case FishType.A:
+                return "A";
+            case FishType.B:
+                return "B";
+            case FishType.C:
+                return "C";
+        }
+
+        return "Error";
     }
 }

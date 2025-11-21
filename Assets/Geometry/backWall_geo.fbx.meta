@@ -3,7 +3,12 @@ guid: 680f7dedab7982101a85436ddd396050
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: backWall_shd
+    second: {fileID: 2100000, guid: cf872662631f09c4e85ffdb48477f0a9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

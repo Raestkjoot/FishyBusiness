@@ -3,7 +3,17 @@ guid: 026d977904639de5b9cbcacff93f4070
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fishGlass_shd
+    second: {fileID: 2100000, guid: faac9ed781fe1ce42ae96c431118eaed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fishStand_shd
+    second: {fileID: 2100000, guid: c0362a3009ac6d04892ff943330adf64, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

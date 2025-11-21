@@ -3,7 +3,17 @@ guid: 958c872afb219c056941981f889f8a78
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: counter_shd
+    second: {fileID: 2100000, guid: 0024c1c7b7adc994bba33b9c35658b7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall_shd
+    second: {fileID: 2100000, guid: cf872662631f09c4e85ffdb48477f0a9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

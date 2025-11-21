@@ -2,25 +2,14 @@ using UnityEngine;
 
 public class FishTank : MonoBehaviour
 {
-    [SerializeField] private FishType _fishType;
+    [SerializeField] private Fish.FishType _fishType;
 
-    private void OnMouseEnter()
+    private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Mouse is over " + GetFishName(_fishType) + " fish.");
-    }
-
-    private string GetFishName(FishType type)
-    {
-        switch (type)
+        if (other.CompareTag("Fish"))
         {
-            case FishType.A:
-                return "A";
-            case FishType.B:
-                return "B";
-            case FishType.C:
-                return "C";
+            Fish fish = other.GetComponent<Fish>();
+            Debug.Log("Fish_" + Fish.GetFishName(fish.Type) + " added to FishTank_" + Fish.GetFishName(_fishType) + " | " + (_fishType == fish.Type ? "correct" : "incorrect"));
         }
-
-        return "Error";
     }
 }
